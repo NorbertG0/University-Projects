@@ -1,0 +1,23 @@
+
+
+stages:
+  - build
+  - publish
+
+build_package:
+  stage: build
+  script:
+    - pip install build twine
+    - python -m build
+
+publish_package:
+  stage: publish
+  script:
+    - python -m twine upload --repository-url https://git.e-science.pl/api/v4/projects/1929/packages/pypi dist/*
+  only:
+    - biblioteka
+  variables:
+    TWINE_USERNAME: "__token__"
+    TWINE_PASSWORD: ***
+
+
