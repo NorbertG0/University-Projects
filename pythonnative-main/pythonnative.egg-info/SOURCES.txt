@@ -1,0 +1,11 @@
+README.md
+setup.py
+interpolator/__init__.py
+interpolator/main.py
+interpolator/newton_wrapper.py
+interpolator/lib/newton.dll
+pythonnative.egg-info/PKG-INFO
+pythonnative.egg-info/SOURCES.txt
+pythonnative.egg-info/dependency_links.txt
+pythonnative.egg-info/not-zip-safe
+pythonnative.egg-info/top_level.txt
